@@ -1,0 +1,16 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: consumer
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+feign:
+  hystrix:
+    enabled: true
