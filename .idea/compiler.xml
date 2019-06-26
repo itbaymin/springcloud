@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-service" />
         <module name="config" />
-        <module name="config-server" />
         <module name="eureka-server" />
+        <module name="nacos-client" />
         <module name="service-consumer" />
         <module name="service-provider" />
         <module name="springcloud" />
@@ -22,6 +22,7 @@
       <module name="config" target="1.5" />
       <module name="config-server" target="1.5" />
       <module name="eureka-server" target="1.5" />
+      <module name="nacos-client" target="1.5" />
       <module name="service-consumer" target="1.5" />
       <module name="service-provider" target="1.5" />
       <module name="springcloud" target="1.5" />
