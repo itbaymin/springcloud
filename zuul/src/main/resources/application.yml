@@ -5,9 +5,11 @@ eureka:
     hostname: localhost
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
+#    ip-address: 172.0.0.1
+#    prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://byc:123@localhost:8082/eureka/
 spring:
   application:
     name: service-zuul

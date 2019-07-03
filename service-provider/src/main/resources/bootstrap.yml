@@ -23,9 +23,10 @@ management:
         include: bus-refresh
 eureka:
   instance:
-    hostname: localhost
+#    hostname: localhost
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
+    ip-address: 127.0.0.1
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://127.0.0.1:8082/eureka/
